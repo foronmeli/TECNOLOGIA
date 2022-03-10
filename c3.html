@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.des{display: none;}
+
+
+		.des{display: none;}
+
+		.para{
+    	position: absolute;
+        top: -0.9em;
+        left: 0.5em;
+        font-family: Stabillo;
+        font-size: 5em;
+    }
+    .div34 {
+background-color: rgba(255,255,255,0.5) ;
+height: 5em; 
+}
+
+.p1{
+   position: absolute;
+   top: 8em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p2{
+   position: absolute;
+   top: 14em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p3{
+   position: absolute;
+   top: 20em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p4{
+   position: absolute;
+   top: 26em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p5 {
+    position: absolute;
+    top: 7em;
+    left: 27em;
+    width: 4em;
+  padding: 1em;
+  border: 0.09em solid black;
+  font-size: 1.5em;
+ background: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  color: black;
+}
+
+.text1{
+	position: absolute;
+        top: 9em;
+        left: 20em;
+        font-family:Bakso Sapi ;
+        font-size: 2em;
+}
+	
+@media (max-width: 1300px){
+  .div34 {
+background-color: rgba(255,255,255,0.5) ;
+height: 8em; 
+}
+
+	</style>
+</head>
+<body bgcolor="#E8DCF6">
+	<div><P class="para" >AQUÍ PUEDES HALLAR LA DISTANCIA</P></div>
+<form>
+	<input type="text" class="p1" id="an" placeholder="DIGITE EL TERMINO CUALQUIERA">
+	<input type="text" class="p2" id="ai" placeholder="DIGITE EL TERMINO INICIAL">
+	<input type="text" class="p3" id="n" placeholder="DIGITE LA POSICION">
+	<input type="button" class="p5" value="VER" onclick="caso()">
+</form>
+<DIV class="text1">
+<div id="nn">d=</div>
+<br>
+<br>
+<div class="des" id="desarrollo">
+<div>an=ai+(n-1)*d</div>
+<div>ai=TERMINO INICIAL</div>
+<div>N=POSICION</div>
+<div>an=TERMINO CUALQUIERA</div>
+</div></DIV>
+<script>
+	function caso() {
+	document.getElementById("desarrollo").style.display="block";
+	an=parseInt(an.value);
+	ai=parseInt(ai.value);
+	n=parseInt(n.value);
+	d1=n-1;
+	d2=an-ai;
+	d=d2/d1;
+	nn.innerHTML="d="+d;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>caso1</title>
+	<style type="text/css">
+		.para{
+    	position: absolute;
+        top: -0.9em;
+        left: 5.5em;
+        font-family: Stabillo;
+        font-size: 5em;
+    }
+    .div34 {
+background-color: rgba(255,255,255,0.5) ;
+height: 5em; 
+}
+
+.p1{
+   position: absolute;
+   top: 8em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p2{
+   position: absolute;
+   top: 14em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p3{
+   position: absolute;
+   top: 20em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p4{
+   position: absolute;
+   top: 26em;
+   left: 9em;
+   width: 20em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+
+.p5 {
+    position: absolute;
+    top: 7em;
+    left: 27em;
+    width: 4em;
+  padding: 1em;
+  border: 0.09em solid black;
+  font-size: 1.5em;
+ background: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  color: black;
+}
+
+.text1{
+	position: absolute;
+        top: 9em;
+        left: 20em;
+        font-family:Bakso Sapi ;
+        font-size: 2em;
+}
+	
+@media (max-width: 1300px){
+  .div34 {
+background-color: rgba(255,255,255,0.5) ;
+height: 8em; 
+}
+
+
+
+
+	</style>
+</head>
+<body bgcolor="#E8DCF6">
+	<div class="div34"><p class="para">HALLAR PROGRESIÓN</p></div>
+<form>
+	<input type="text" class="p1" id="n1" placeholder="NUMERO 1 (TIENE QUE SER EL MENOR)">
+	<input type="text" class="p2" id="n2" placeholder="NUMERO 2 (TIENE QUE SER DEL MEDIO)">
+	<input type="text" class="p3"id="n3" placeholder="NUMERO 3 (TIENE QUE SER EL MAYOR)">
+	<input type="text" class="p4"id="an" placeholder="DIGITE LA POSICION QUE QUIERE HALLAR">
+	<input type="button" class="p5"value="VER" onclick="caso1()">
+</form>
+<div class="text1">
+<div id="progre">an=</div>
+<div id="form">FORMULA ESPECÍFICA:</div>
+<div id="nums">PROGRESIÓN:</div></div>
+<script>
+	function caso1(){
+	v1=parseInt(n1.value);
+	v2=parseInt(n2.value);
+	v3=parseInt(n3.value);
+	ann=parseInt(an.value);
+	d=v2-v1;
+	anr=v1+(ann-1)*d;
+	progre.innerHTML="an="+anr;
+	form.innerHTML="FORMULA ESPECÍFICA: an="+v1+"+("+ann+"-1)*"+d;
+	uno=v3+d;
+	dos=uno+d;
+	tres=dos+d;
+	cuatro=tres+d;
+	cinco=cuatro+d;
+	nums.innerHTML="PROGRESIÓN: " +v1+ "," +v2+ ", " +v3+", " +uno+", "+dos+", "+tres+", "+cuatro+", "+cinco;
+	}
+</script>
+</body>
+</html>

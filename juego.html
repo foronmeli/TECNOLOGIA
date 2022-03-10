@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.ver1{display: none;}
+		.ver2{display: none;}
+		.ver3{display: none;}
+		.ver4{display: none;}
+		.ver5{display: none;}
+		.ver6{display: none;}
+	</style>
+	<style type="text/css">
+		.text1{
+	position: absolute;
+        top: 6em;
+        left: 3em;
+        font-family:Bakso Sapi ;
+        font-size: 2em;
+}
+	.para{
+    	position: absolute;
+        top: -0.9em;
+        left: 0.5em;
+        font-family: Stabillo;
+        font-size: 5em;
+    }
+    .p5 {
+    position: absolute;
+    top: 15em;
+    left: 10em;
+    width: 8em;
+  padding: 1em;
+  border: 0.09em solid black;
+  font-size: 0.5em;
+ background: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  color: black;}
+  .p4{
+   position: absolute;
+   top: 11em;
+   left: -1.5em;
+   width: 8em;
+   height: 60px;
+   font-size: 35px;
+   font-family: Bakso Sapi;
+   border-radius: 35%;
+  padding: 7px;
+  font-weight: 600px;
+  font-size: 20px;
+  color: #323132;
+  background-color: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border: 3px solid #AF6180 ;
+
+}
+.ot {
+    position: absolute;
+    top: 15em;
+    left: 20em;
+    width: 12em;
+  padding: 1em;
+  border: 0.09em solid black;
+  font-size: 0.5em;
+ background: white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  color: black;}
+	</style>
+</head>
+<body bgcolor="#E8DCF6">
+	<p class="para">AQUÍ PUEDE APLICAR TODO LO APRENDIDO</p>
+	<div class="text1">
+	<div class="ver1" id="v1">
+	<div>El termino incial es 2</div>
+	<div>El termino cualquiera es 14</div>
+	<div>La posicion es 7</div>
+	<div>Hallar distancia</div>
+	<form>
+		<input type="text"  class="p4" id="sol1" placeholder="DISTANCIA">
+		<input type="button" class="p5" onclick="uno()" value="CALCULAR">
+	</form>
+</div>
+	<div class="ver3" id="v3">
+	<div>El termino incial es 2</div>
+	<div>El termino cualquiera es 23</div>
+	<div>La posicion es 8</div>
+	<div>Hallar distancia</div>
+	<form>
+		<input type="text" class="p4" id="sol3" placeholder="DISTANCIA">
+		<input type="button" class="p5" onclick="tres()" value="CALCULAR">
+	</form>
+	</div>
+	<div class="ver2" id="v2">
+	<div>La distancia es 2</div>
+	<div>El termino cualquiera es 24</div>
+	<div>La posicion es 4</div>
+	<div>Hallar termino inicial</div>
+	<form>
+		<input type="text" class="p4" id="sol2" placeholder="TERMINO INICIAL">
+		<input type="button" class="p5" onclick="dos()" value="CALCULAR">
+	</form>
+</div>
+<div class="ver4" id="v4">
+	<div>La distancia es 5</div>
+	<div>El termino cualquiera es 36</div>
+	<div>La posicion es 8</div>
+	<div>Hallar termino inicial</div>
+	<form>
+		<input type="text" class="p4" id="sol4" placeholder="TERMINO INICIAL">
+		<input type="button" class="p5" onclick="cuatro()" value="CALCULAR">
+	</form>
+</div>
+<div class="ver5" id="v5">
+	<div>La distancia es 6</div>
+	<div>El termino inicial es 10</div>
+	<div>La posicion es 5</div>
+	<div>Hallar termino cualquiera</div>
+	<form>
+		<input type="text" class="p4" id="sol5" placeholder="TERMINO CUALQUIERA">
+		<input type="button" class="p5" onclick="cinco()" value="CALCULAR">
+	</form>
+</div>
+<div class="ver6" id="v6">
+	<div>La distancia es 13</div>
+	<div>El termino cualquiera es 21</div>
+	<div>La posicion es 5</div>
+	<div>Hallar termino cualquiera</div>
+	<form>
+		<input type="text" class="p4" id="sol6" placeholder="TERMINO CUALQUIERA">
+		<input type="button" class="p5" onclick="seis()" value="CALCULAR">
+	</form>
+</div>
+<div id="res">RESPUESTA: </div>
+<script>
+	var tam=Math.floor((Math.random()*(7-1))+1);
+        if (tam==1) {
+            document.getElementById("v1").style.display="block";
+        }
+        if (tam==2) {
+            document.getElementById("v2").style.display="block";
+        }
+        if (tam==3) {
+            document.getElementById("v3").style.display="block";
+        }
+        if (tam==4) {
+            document.getElementById("v4").style.display="block";
+        }
+        if (tam==5) {
+            document.getElementById("v5").style.display="block";
+        }
+        if (tam==6) {
+            document.getElementById("v6").style.display="block";
+        }
+    function uno() {
+    	solu1=parseInt(sol1.value);
+    	if (solu1==2) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu1!=2) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+    function dos() {
+    	solu2=parseInt(sol2.value);
+    	if (solu2==24) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu2!=24) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+    function tres() {
+    	solu4=parseInt(sol4.value);
+    	if (solu3==3) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu3!=3) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+    function cuatro() {
+    	solu4=parseInt(sol4.value);
+    	if (solu4==1) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu4!=1) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+    function cinco() {
+    	solu5=parseInt(sol5.value);
+    	if (solu5==34) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu5!=34) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+    function seis() {
+    	solu6=parseInt(sol6.value);
+    	if (solu6==86) {
+    		res.innerHTML="RESPUESTA: CORRECTA";
+    	}
+    	if (solu6!=86) {
+    		res.innerHTML="RESPUESTA: INCORRECTA";
+    	}
+    }
+</script>
+<a href="juego.html"><input type="button" value="OTRA PREGUNTA" class="ot"></a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+	v1=parseInt(n1.value);
+	v2=parseInt(n2.value);
+	v3=parseInt(n3.value);
+	ann=parseInt(an.value);
+	if (v3>v2&&v3>v1) 
+	{
+		if (v2>v1) 
+		{
+			console.log("mayor 3 medi 2 meno 1");
+			d=v3-v2;
+			anr=v1+(ann-1)*d;
+			progre.innerHTML="an="+anr;
+		}
+	else
+	  {
+            console.log("mayor 3 medi 1 meno 2");
+            d=v3-v1;
+            anr=v2+(ann-1)*d;
+            progre.innerHTML="an="+anr;
+	  }
+	  if (v2>v1&&v2>v3) 
+	{
+		if (v3>v1) 
+		{
+			console.log("mayor 2 medi 3 meno 1");
+			d=v2-v3;
+			anr=v1+(ann-1)*d;
+			progre.innerHTML="an="+anr;
+		}
+	else
+	  {
+            console.log("mayor 2 medi 1 meno 3");
+            d=v2-v1;
+            anr=v3+(ann-1)*d;
+            progre.innerHTML="an="+anr;
+	  }
+	}
+	if (v1>v2&&v2>v3) 
+	{
+		if (v3>v2) 
+		{
+			console.log("mayor 1 medi 3 meno 2");
+			d=v1-v3;
+			anr=v2+(ann-1)*d;
+			progre.innerHTML="an="+anr;
+		}
+	else
+	  {
+            console.log("mayor 1 medi 2 meno 3");
+            d=v1-v2;
+            anr=v3+(ann-1)*d;
+            progre.innerHTML="an="+anr;
+	  }
+	}
+	}
